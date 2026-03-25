@@ -26,7 +26,7 @@ Configure shared folders in a Windows Server environment and implement access co
 
 ## Step-by-Step Configuration
 
-### 1. Create Folder Structure
+### 1. Created Folder Structure
 
 Created a centralized directory for departmental shares.
 
@@ -34,62 +34,47 @@ Created a centralized directory for departmental shares.
 - C:\Shares\HR  
 - C:\Shares\IT  
 - C:\Shares\Sales  
-
-Screenshot 1: Folder structure  
+  
 ![Folder Structure](1-folder-structure.png)
 
 ---
 
-### 2. Configure Share Permissions (HR)
+### 2. Configured Share Permissions (HR)
 
-Shared the HR folder and assigned permissions to the HR security group.
-
-Screenshot 2: Advanced Sharing enabled  
+Shared the HR folder and assigned permissions to the HR security group in Advance Sharing option. Configured permissions to Change and Read.
+  
 ![HR Advanced Sharing](2-hr-advanced-sharing.png)
-
-Screenshot 3: Share permissions (HR_Users group)  
+  
 ![HR Share Permissions](3-hr-share-permissions.png)
 
-**Configuration:**
-- Share name: HR  
-- Group: HR_Users  
-- Permissions: Change, Read  
-
 ---
 
-### 3. Configure NTFS Permissions (HR)
+### 3. Configured NTFS Permissions (HR)
 
-Configured file system permissions for the HR folder.
-
-Screenshot 4: NTFS permissions (Security tab)  
+Configured file system permissions for the HR folder in the Security tab. Removed unwanted groups and added HR_Users. Assigned permissions Modify, Read & Execute, List folder contents, Read and Write to the HR_Users group.
+  
 ![HR NTFS Permissions](4-hr-ntfs-permissions.png)
 
-**Configuration:**
-- Group: HR_Users  
-- Permissions: Modify, Read & Execute, Write  
-
 ---
 
-### 4. Configure IT and Sales Folders
+### 4. Configured IT and Sales Folders
 
-Applied the same process to additional departments.
-
-Screenshot 5: IT permissions  
+Applied the same process to additional departments (IT and Sales) to their designated folder. Assigned permissions Modify, Read & Execute, List folder contents, Read and Write.
+  
 ![IT Permissions](5-it-permissions.png)
-
-Screenshot 6: Sales permissions  
+  
 ![Sales Permissions](6-sales-permissions.png)
 
 ---
 
-### 5. Validate Access from Client Machine
+### 5. Validated Access from Client Machine
 
-Tested access using domain users.
+Tested access using an HR user on the HR folder and Sales folder. HR folder access was granted but Sales folder was denied due to permissions.
 
-Screenshot 7: Authorized access (HR user → HR folder)  
+Authorized access (HR user → HR folder)  
 ![HR Access Success](7-hr-access-success.png)
 
-Screenshot 8: Access denied (HR user → IT/Sales folders)  
+Access denied (HR user → IT/Sales folders)  
 ![Access Denied](8-access-denied.png)
 
 ---
