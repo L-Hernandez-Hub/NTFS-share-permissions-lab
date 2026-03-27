@@ -7,10 +7,10 @@ Configure shared folders in a Windows Server environment and implement access co
 
 ## Lab Environment
 
-- Windows Server 2019 Virtual Machine  
+- Windows Server 2019 Virtual Machine
+- Windows 11 Pro Virtual Manchine (domian-joined client)
 - Active Directory Domain Services (AD DS)  
-- Active Directory Users and Computers (ADUC)  
-- Windows 11 Pro (Domain-joined client)
+- Active Directory Users and Computers (ADUC)
 
 ---
 
