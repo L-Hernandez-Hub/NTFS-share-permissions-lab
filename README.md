@@ -35,7 +35,7 @@ Created a centralized directory for departmental shares.
 - C:\Shares\IT  
 - C:\Shares\Sales  
   
-![Folder Structure](1-folder-structure.png)
+![Folder Structure](Screenshots/1-folder-structure.png)
 
 ---
 
@@ -43,9 +43,9 @@ Created a centralized directory for departmental shares.
 
 Shared the HR folder and assigned permissions to the HR security group in Advance Sharing option. Configured permissions to Change and Read.
   
-![HR Advanced Sharing](2-hr-advanced-sharing.png)
+![HR Advanced Sharing](Screenshots/2-hr-advanced-sharing.png)
   
-![HR Share Permissions](3-hr-share-permissions.png)
+![HR Share Permissions](Screenshots/3-hr-share-permissions.png)
 
 ---
 
@@ -53,7 +53,7 @@ Shared the HR folder and assigned permissions to the HR security group in Advanc
 
 Configured file system permissions for the HR folder in the Security tab. Removed unwanted groups and added HR_Users. Assigned permissions Modify, Read & Execute, List folder contents, Read and Write to the HR_Users group.
   
-![HR NTFS Permissions](4-hr-ntfs-permissions.png)
+![HR NTFS Permissions](Screenshots/4-hr-ntfs-permissions.png)
 
 ---
 
@@ -61,9 +61,9 @@ Configured file system permissions for the HR folder in the Security tab. Remove
 
 Applied the same process to additional departments (IT and Sales) to their designated folder. Assigned permissions Modify, Read & Execute, List folder contents, Read and Write.
   
-![IT Permissions](5-it-permissions.png)
+![IT Permissions](Screenshots/5-it-permissions.png)
   
-![Sales Permissions](6-sales-permissions.png)
+![Sales Permissions](Screenshots/6-sales-permissions.png)
 
 ---
 
@@ -72,10 +72,10 @@ Applied the same process to additional departments (IT and Sales) to their desig
 Tested access using an HR user on the HR folder and Sales folder. HR folder access was granted but Sales folder was denied due to permissions.
 
 Authorized access (HR user → HR folder)  
-![HR Access Success](7-hr-access-success.png)
+![HR Access Success](Screenshots/7-hr-access-success.png)
 
 Access denied (HR user → IT/Sales folders)  
-![Access Denied](8-access-denied.png)
+![Access Denied](Screenshots/8-access-denied.png)
 
 ---
 
